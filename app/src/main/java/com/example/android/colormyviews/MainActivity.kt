@@ -30,7 +30,10 @@ class MainActivity : AppCompatActivity() {
     private fun makeColored(view: View) {
         when (view.id) {
             R.id.textViewOne -> view.setBackgroundColor(Color.DKGRAY)
-            R.id.textViewTwo -> view.setBackgroundColor(Color.GRAY)
+            R.id.textViewTwo ->{
+                view.setBackgroundColor(Color.GRAY)
+                view.setBackgroundResource(R.drawable.ic_baseline_chat_bubble_24)
+            }
             R.id.textViewThree -> view.setBackgroundColor(Color.BLUE)
             R.id.textViewFour -> view.setBackgroundColor(Color.MAGENTA)
             R.id.textViewFive -> view.setBackgroundColor(Color.BLUE)

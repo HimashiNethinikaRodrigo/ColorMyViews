@@ -28,6 +28,7 @@
         android:layout_marginTop="@dimen/margin_wide"
         android:layout_marginEnd="@dimen/margin_wide"
         android:text="@string/box_two"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewOne" />
 
