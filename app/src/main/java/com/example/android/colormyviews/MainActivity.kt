@@ -20,7 +20,10 @@ class MainActivity : AppCompatActivity() {
             findViewById(R.id.textViewThree),
             findViewById(R.id.textViewFour),
             findViewById(R.id.textViewFive),
-            findViewById(R.id.constraintLayout)
+            findViewById(R.id.constraintLayout),
+            findViewById(R.id.buttonRed),
+            findViewById(R.id.buttonYellow),
+            findViewById(R.id.buttonGreen)
         )
 
         for (item in clickableViews)
@@ -37,6 +40,10 @@ class MainActivity : AppCompatActivity() {
             R.id.textViewThree -> view.setBackgroundColor(Color.BLUE)
             R.id.textViewFour -> view.setBackgroundColor(Color.MAGENTA)
             R.id.textViewFive -> view.setBackgroundColor(Color.BLUE)
+            R.id.buttonRed -> textViewThree.setBackgroundResource(R.color.my_red)
+            R.id.buttonYellow -> textViewFour.setBackgroundResource(R.color.my_yellow)
+            R.id.buttonGreen -> textViewFive.setBackgroundResource(R.color.my_green)
+
             else -> view.setBackgroundColor(Color.LTGRAY)
         }
     }
